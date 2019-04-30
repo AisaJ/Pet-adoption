@@ -1,15 +1,7 @@
-{%extends 'base.html'%}
-
-{% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-{% endblock %}
-
 {% block content %}
 
  <!-- Dropdown -->
  <li class="nav-item dropdown">
-    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="#aboutus">Get directions</a>
         <a class="dropdown-item" href="#aboutus">About us</a>
         <a class="dropdown-item" href="index.html">Pet Adoption</a>

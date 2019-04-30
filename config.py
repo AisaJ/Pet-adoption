@@ -11,7 +11,7 @@ class TestConfig(Config):
 class DevConfig(Config):
   DEBUG = True
 
-config_options = {
+config_options ={
   'development':DevConfig,
   'production':ProdConfig,
   'tests':TestConfig
