@@ -1,6 +1,6 @@
 
 class Config:
-  pass
+  SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:jemila@localhost/pets'
 
 class ProdConfig(Config):
   pass
