@@ -5,9 +5,9 @@ from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
-login_manger = LoginManager()
-login_manger.session_protection = 'strong'
-login_manger.login_view = 'auth.login'
+login_manager = LoginManager()
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'auth.login'
 bootstrap = Bootstrap()
 
 def create_app(config_name):
@@ -26,6 +26,6 @@ def create_app(config_name):
   #Initializing flask extenstions
   bootstrap.init_app(app)
   db.init_app(app)
-  login_manger.init_app(app)
+  login_manager.init_app(app)
 
   return app
