@@ -1,7 +1,7 @@
 from . import main
-from flask import render_template
-from ..models import User
-
+from flask import render_template,flash,abort,redirect,url_for
+from ..models import User,Pet,Message
+from .. import db
 
 @main.route('/')
 def index():

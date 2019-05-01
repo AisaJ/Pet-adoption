@@ -16,6 +16,17 @@ class User(UserMixin,db.Model):
   profile_pic_path = db.Column(db.String())
   password_secure = db.Column(db.String(255))
   role_id = db.Column(db.Integer,db.ForeignKey('roles.id'))
+  pets = db.relationship('Pet',backref='user',lazy='dynamic')
+  @property
+  def password(self):
+    raise AttributeError('You cannot read the password attribute')
+
+  @password.setter
+  def password(self,password):
+    self.password_secure = generate_password_hash(password)
+
+  def verify_password(self,password):
+    return check_password_hash(self.password_secure,password)
 
   def __repr__(self):
     return f'User{self.username}'
@@ -23,7 +34,7 @@ class User(UserMixin,db.Model):
 class Role(db.Model):
   __tablename__ = 'roles'
   id = db.Column(db.Integer,primary_key=True)
-  name = db.Column(db.String())
+  name = db.Column(db.String(255))
   pet_users = db.relationship('User',backref = 'role',lazy="dynamic")
 
   def __repr__(self):
