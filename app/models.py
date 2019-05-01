@@ -28,3 +28,10 @@ class Role(db.Model):
 
   def __repr__(self):
     return f'User{self.name}'
+
+class Message(db.Model):
+  __tablename__ = 'message'
+  id = db.Column(db.Integer,primary_key=True)
+  message = db.Column(db.String(255))
+  user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+
