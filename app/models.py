@@ -23,7 +23,7 @@ class User(UserMixin,db.Model):
 class Role(db.Model):
   __tablename__ = 'roles'
   id = db.Column(db.Integer,primary_key=True)
-  name = db.Column(db.String)
+  name = db.Column(db.String())
   pet_users = db.relationship('User',backref = 'role',lazy="dynamic")
 
   def __repr__(self):
@@ -34,4 +34,24 @@ class Message(db.Model):
   id = db.Column(db.Integer,primary_key=True)
   message = db.Column(db.String(255))
   user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+  pet_id = db.Column(db.Integer,db.ForeignKey('pets.id'))
 
+  def message_save(self):
+    db.session.add(self)
+    db.session.commit()
+
+  def __repr__(self):
+    return f'Message{self.message}'
+
+class Pet(db.Model):
+  __tablename__ ='pets'
+  id =db.Column(db.Integer,primary_key=True)
+  pet_name =db.Column(db.String(255))
+  gender =db.Column(db.String(255))
+  age =db.Column(db.Integer)
+  description = db.Column(db.String(255))
+  contact = db.Column(db.Integer)
+  user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+
+  def __repr__(self):
+    return f'Pet{self.pet_name}'
