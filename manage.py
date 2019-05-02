@@ -1,6 +1,6 @@
 from app import create_app
 from flask_script import Manager,Server
-from app.models import User,Role,Pet
+#from app.models import User,Role,Pet
 
 app = create_app('development')
 
