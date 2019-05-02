@@ -1,19 +1,192 @@
 {% extends 'base.html' %}
 
-{% block styles %}
-  {{super()}}
-  <link rel="styelsheeet" href="{{url_for('static',filename='css/styles.css')}}">
-{% endblock %}
-
+{% block styles%}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+{% endblock%}
 {% block content %}
 
-<div class="container-fluid">
-  <div class="row">
-    <div>
-      <h2>{{title}}</h2>
-      <h3>People tend to confuse hamsters and rats lol!</h3>
-      <img src="/static/images/hamsters.jpeg" alt="Hamster" width="750">
+<div class="container-fluid home">
+    <!--/.Navbar-->
+    <div class="row overlay1">
+        <div id="cori">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="/static/images/whitedog.jpeg"
+                            alt="First slide" height="550">
+                        <div class="carousel-caption d-md-block">
+                            <div class="captions">
+                                <h2> No one appreciate the very special genius of your conversation as much as the Pet
+                                    does...</h2>
+                                <p> No matter how little money and how few possesions you own,having Pet makes you feel
+                                    rich..... </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/static/images/covered-dog.jpeg"
+                            alt="Second slide" height="550">
+                        <div class="carousel-caption  d-md-block">
+                            <div class="captions">
+                                <h2>You know ,a Pet can snap you out of any kind of bad mood that you're in faster than
+                                    you can think of....</h2>
+                                <p>The world would be a nicer place if everyone had the ability to love as
+                                    unconditionally as a PET!!!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/static/images/veterinary.jpeg"
+                            alt="Third slide" height="550" >
+                        <div class="carousel-caption  d-md-block">
+                            <div class="captions">
+                                <h2>Are you ready to meet your next best furry friend?</h2>
+                                <p>These lovely dogs have a long life expectancy in comparison with other dog breeds, a
+                                    healthy and well cared</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/static/images/kitten.jpeg"
+                            alt="Fourth slide" height="550" >
+                        <div class="carousel-caption  d-md-block">
+                            <div class="captions">
+                                <h2>A pet is the only thing on earth that loves you more than anything</h2>
+                                <p>It is amazing how much love and laughter they bring into our lives and even how much
+                                    closer we become with each other because of them</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/static/images/scaredcat.jpeg"
+                            alt="Fifth slide" height="550">
+                        <div class="carousel-caption  d-md-block">
+                            <div class="captions">
+                                <h2>My little Pet - a heartbeat at my feet</h2>
+                                <p>The bond with a true Dog is as lasting as the ties of this earth will ever be.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="/static/images/puppy.jpeg"
+                            alt="Fifth slide" height="550">
+                        <div class="carousel-caption d-md-block">
+                            <div class="captions">
+                                <h2>If you pick up a starving dog and make him prosperous he will not bite you.This is
+                                    the principal difference between a dog and man.</h2>
+                                <p>If dogs could talk, perharps we would find it as hard to get along with them as we do
+                                    with people....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <div class="sr-only" id="prev">Previous</div>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+                    id="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <div class="sr-only" id="prev">Next</div>
+                </a>
+            </div>
+
+        </div>
+
     </div>
-  </div>
 </div>
-{% endblock %}
+
+
+    <div class="home">
+        <div class="row" id="pad">
+            
+            <div class="col-md-3">
+                <div class="zoom card card-image" style="background-image: url(images/price.jpeg);">
+
+
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <h5 class="black-text"><i class="fas fa-chart-pie"></i> Pet Adoption</h5>
+                            <h3 class="card-title pt-2"><strong>Pets</strong></h3>
+                            <p>Pets are humanizing.They remind us we have an obligation and responsibility to preserve
+                                and nurture
+                                and care for all life.</p>
+                            <a id="petsClick" class="btn btn-black"><i class="fas fa-clone left"></i> Click to view</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class=" zoom card card-image" style="background-image: url(images/size1.jpg);">
+
+                    <!-- Content -->
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <h5 class="black-text"><i class="fas fa-chart-pie"></i> Pet Adoption</h5>
+                            <h3 class="card-title pt-2"><strong>Pets Care</strong></h3>
+                            <p>We must vote for hope,vote for life,vote for a brighter future for all of our loved ones.
+                            </p>
+                            <a id="addpets" class="btn btn-black"><i class="fas fa-clone left"></i> Click to view</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div id="card4" class=" zoom card card-image">
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <h5 class="black-text"><i class="fas fa-chart-pie"></i> Pet Adoption</h5>
+                            <h3 class="card-title pt-2"><strong>Add Pets</strong></h3>
+                            <p class="para">Lighten up,just enjoy life,smile more,and don't get so worked up about
+                                things.</p>
+                            <a id="addpets" class="btn btn-black"><i class="fas fa-clone left"></i>Click to view</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class=" zoom card card-image" style="background-image: url(images/size1.jpg);">
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <h5 class="black-text"><i class="fas fa-chart-pie"></i> Pet Adoption</h5>
+                            <h3 class="card-title pt-2"><strong>veterinary</strong></h3>
+                            <p>We must vote for hope,vote for life,vote for a brighter future for all of our loved ones.
+                            </p>
+                            <a id="veterinary" class="btn btn-black"><i class="fas fa-clone left"></i> Click to view</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    {% include 'footer.html' %}
+{%endblock%}
