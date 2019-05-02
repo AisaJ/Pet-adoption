@@ -1,5 +1,4 @@
 {% extends 'bootstrap/base.html'%}
-<<<<<<< HEAD
 
 {%block navbar%}
 {%include 'navbar.html'%}
@@ -10,6 +9,8 @@
 {% endblock %}
 
 {%block styles%}
+  {{ simplemde.css}}
+  {{ simplemde.js }}
 <!--Google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Cantarell|Patrick+Hand" rel="stylesheet">
 
@@ -37,17 +38,3 @@
 
 
 
-=======
-<!-- Navbar block  -->
-{% block navbar %}
-    {% include 'navbar.html' %}
-{% endblock %}
-
-{%block styles %}
-  {{super()}}
-  <!--Importing the simple mde css and js files  -->
-  {{ simplemde.css}}
-  {{ simplemde.js }}
-
-{% endblock %}
->>>>>>> origin/amin/forms

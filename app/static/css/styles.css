@@ -2,9 +2,6 @@ body{
   font-family: 'Patrick Hand', cursive;
   /* font-family: 'Cantarell', sans-serif; */
 }
-#pad{
-  padding: 2%;
-}
-.container-fluid{
-  width: 100%;
+.navbar{
+  background-color: dark;
 }
