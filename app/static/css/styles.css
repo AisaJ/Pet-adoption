@@ -1,9 +1,16 @@
 body{
-  font-family: 'Patrick Hand', cursive;
-  /* font-family: 'Cantarell', sans-serif; */
+  font-family: 'Cantarell', sans-serif; 
+
 }
 .navbar{
-  background-color: dark;
+  background-color: #f4a460;
+  color: black;  
+}
+.nav-link{
+  color: black;
+}
+#navbarClick img{
+width: 50px;
 }
 .pet-title{
   margin-left: 35%;
@@ -19,4 +26,29 @@ body{
 }
 .about-desc{
   border-bottom: 1px dotted #f4a460;
+}
+#pets{
+  font-size: 1.3em;
+}
+#basicExampleNav{
+  margin-left: 200px;
+}
+h6{
+  color:white;
+}
+h5{
+  color:black;
+}
+h1{
+  text-align: center;
+  margin-left: 35%;
+}
+img{
+  background-blend-mode: soft-light;
+}
+.para{
+  color:black;
+}
+#card1{
+  background-image: url("")
 }
