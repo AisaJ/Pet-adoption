@@ -12,8 +12,12 @@ body{
 #navbarClick img{
 width: 50px;
 }
-.pet-title{
-  margin-left: 35%;
+.pets-title{
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color:rgb(244,164,96);
+  border-radius: 25px;
+  margin-bottom: 1%;
 }
 .pet-video{
   margin-top: -1%;
@@ -49,6 +53,15 @@ img{
 .para{
   color:black;
 }
-#card1{
-  background-image: url("")
+.carousel-caption{
+  margin-top: 0%;
+  background-color: rgba(96,244,238,0.5);
+  border-radius: 30px;
+  padding: 1%;
 }
+/* .card-image{
+  background-image: url('../static/images/paka2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
