@@ -56,9 +56,9 @@ def update_pic(uname):
 @login_required
 def new_pet():
     pet_form = PetForm()
-    if form.validate_on_submit():
+    if pet_form.validate_on_submit():
         name = pet_form.name.data
-        new_pet = Pet(name=name)
+        new_pet = Pet(pet_name=name)
 
         db.session.add(new_pet)
         db.session.commit()

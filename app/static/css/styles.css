@@ -5,3 +5,18 @@ body{
 .navbar{
   background-color: dark;
 }
+.pet-title{
+  margin-left: 35%;
+}
+.pet-video{
+  margin-top: -1%;
+  margin-bottom:3%;
+  margin-left: 3%;
+  margin-right:3%;
+}
+.about-us{
+  background-color: rgb(96,244,238);
+}
+.about-desc{
+  border-bottom: 1px dotted #f4a460;
+}
