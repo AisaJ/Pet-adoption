@@ -60,6 +60,7 @@ class Pet(db.Model):
   pet_name =db.Column(db.String(255))
   gender =db.Column(db.String(255))
   age =db.Column(db.Integer)
+  pet_pic_path =db.Column(db.String())
   description = db.Column(db.String(255))
   contact = db.Column(db.Integer)
   user_id = db.Column(db.Integer,db.ForeignKey('users.id'))

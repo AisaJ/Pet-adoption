@@ -2,7 +2,7 @@ from . import main
 from flask import render_template,flash,abort,redirect,url_for,request
 from flask_login import login_required, current_user
 from ..models import User,Pet,Message
-from .forms import UpdateProfile
+from .forms import UpdateProfile,PetForm,MessageForm
 from .. import db,photos
 import markdown2
 
@@ -52,3 +52,19 @@ def update_pic(uname):
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
 
+@main.route('/pet/new',methods=['GET','POST'])
+@login_required
+def new_pet():
+    pet_form = PetForm()
+    if form.validate_on_submit():
+        name = pet_form.name.data
+        new_pet = Pet(name=name)
+
+        db.session.add(new_pet)
+        db.session.commit()
+
+        return redirect(url_for('main.index'))
+    return render_template('new_pet.html',pet_form=pet_form,title='Please add pet for adoption')
+
+
+    
