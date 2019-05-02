@@ -5,6 +5,10 @@ body{
 #pad{
   padding: 2%;
 }
-.container-fluid{
-  width: 100%;
+.navbar{
+  background-color: #20b2aa;
+  color: #b26120;
+}
+.nav-link{
+  color: #b26120;
 }
