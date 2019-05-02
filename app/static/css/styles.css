@@ -1,6 +1,6 @@
 body{
   font-family: 'Cantarell', sans-serif; 
-  /* font-size: 1.5em;  */
+
 }
 
 .navbar{
@@ -25,4 +25,17 @@ h6{
 }
 h5{
   color:black;
+}
+h1{
+  text-align: center;
+  margin-left: 35%;
+}
+img{
+  background-blend-mode: soft-light;
+}
+.para{
+  color:black;
+}
+#card1{
+  background-image: url("")
 }
