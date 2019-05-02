@@ -45,10 +45,10 @@
             <!-- Links -->
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
-                <li style="color:white;padding:15px;"><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
-                <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+                <li><a href="{{url_for('main.profile',uname=current_user.username)}}" style="color:black;padding:15px;" class="auth"><img src="https://img.icons8.com/material/24/000000/administrator-male.png" width="20">Profile</a></li>
+                <li><a href="{{url_for('auth.logout')}}" style="color:black;padding:15px;" class="auth"><img src="https://img.icons8.com/material/24/000000/shutdown.png" width="20">Sign out</a></li>
                 {% else %}
-                <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+                <li><a href="{{url_for('auth.login')}}" style="color:black;padding:15px;" class="auth" ><img src="https://img.icons8.com/material/24/000000/password.png" width="20">Sign in</a></li>
                 {%endif%}
             </ul>
 

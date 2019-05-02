@@ -3,8 +3,12 @@ body{
 
 }
 .navbar{
-  background-color: #f4a460;
-  color: black;  
+  background-color: #f4a460;   
+}
+.auth{
+  background-color: rgb(96,244,238);
+  border-radius: 15px;
+  margin-right: 0.4%;
 }
 .nav-link{
   color: black;
@@ -12,12 +16,32 @@ body{
 #navbarClick img{
 width: 50px;
 }
-.pets-title{
-  margin-left: 30%;
-  margin-right: 30%;
-  background-color:rgb(244,164,96);
-  border-radius: 25px;
+#navbarClick{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pets-title{      
   margin-bottom: 1%;
+  background-color:rgb(244,164,96);
+}
+#pets-title{
+  border-radius: 25px;
+  padding: 2%;  
+}
+.newpet-title{
+  font-weight: bold;
+  margin-top: 2%;  
+}
+.profile-section,.prof-update,.registration,.login{
+  margin-top: 4%;
+}
+.reg-title{
+  margin-left: 26%;
+  margin-right: 26%;
+  font-weight: bold;  
+}
+.registration,.login{
+  background-color: rgb(244,164,96);
 }
 .pet-video{
   margin-top: -1%;
@@ -36,6 +60,7 @@ width: 50px;
 }
 #basicExampleNav{
   margin-left: 200px;
+  color: black;
 }
 h6{
   color:white;
@@ -58,6 +83,14 @@ img{
   background-color: rgba(96,244,238,0.5);
   border-radius: 30px;
   padding: 1%;
+}
+.navbar-collapse{
+  color: black; 
+}
+@media only screen and (max-width:800px){
+  .carousel-caption{
+    background-color: transparent;
+  }
 }
 /* .card-image{
   background-image: url('../static/images/paka2.jpeg');

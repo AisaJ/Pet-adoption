@@ -8,14 +8,21 @@
 
 {% block content %}
 <div class="container">
-<div class="row">
-<div class="col-md-2"> </div>
-<div class="col-md-8">
-
-{{wtf.quick_form(registration_form)}}
-
-</div>
-<div class="col-md-2"></div>
+<div class="row registration">
+  <div class="row text-center reg-title">
+    <h2><b>Welcome aboard!</b></h2>
+  </div>
+  <div class="row">
+    <div class="col-md-2"> 
+      <img src="/static/images/small-dog.png" alt="Small-dog" class="img-fluid">
+    </div>
+    <div class="col-md-8">
+    
+    {{wtf.quick_form(registration_form)}}
+    
+    </div>
+    <div class="col-md-2"></div>
+  </div>
 </div>
 </div>
 
