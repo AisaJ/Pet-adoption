@@ -1,14 +1,19 @@
 body{
-  font-family: 'Patrick Hand', cursive;
-  /* font-family: 'Cantarell', sans-serif; */
+  font-family: 'Cantarell', sans-serif; 
+  /* font-size: 1.5em;  */
 }
-#pad{
-  padding: 2%;
-}
+
 .navbar{
-  background-color: #20b2aa;
-  color: #b26120;
+  background-color: #f4a460;
+  color: black;
+  
 }
 .nav-link{
-  color: #b26120;
+  color: black;
+}
+#navbarClick img{
+width: 50px;
+}
+#pad{
+  font-size: 1.3em;
 }
