@@ -8,9 +8,10 @@ import markdown2
 
 @main.route('/')
 def index():
-
   title='Adopt a Pet'
-  return render_template('index.html',title=title)
+  pets= Pet.query.all()
+
+  return render_template('index.html',title=title,pet=pets)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -55,16 +56,35 @@ def update_pic(uname):
 @main.route('/pet/new',methods=['GET','POST'])
 @login_required
 def new_pet():
+    pet=Pet.query.filter_by(user_id=current_user.id)
+    pets =Pet.query.all()
     pet_form = PetForm()
     if pet_form.validate_on_submit():
         name = pet_form.name.data
-        new_pet = Pet(pet_name=name)
+        gender = pet_form.gender.data
+        age = pet_form.age.data
+        description = pet_form.description.data
+        contact = pet_form.contact.data
+
+        new_pet = Pet(pet_name=name,gender=gender,age=age,description=description,contact=contact)
 
         db.session.add(new_pet)
         db.session.commit()
 
         return redirect(url_for('main.index'))
-    return render_template('new_pet.html',pet_form=pet_form,title='Please add pet for adoption')
+    return render_template('new_pet.html',pet_form=pet_form,title='Please add pet for adoption',pet=pet,pets=pets)
+
+@main.route('/upload/<uname>/pet/pic',methods= ['POST'])
+@login_required
+def pet_pic(uname):
+    pet=Pet.query.filter_by(user_id=current_user.id)
+    if 'photo' in request.files:
+        filename = photos.save(request.files['photo'])
+        path2 = f'photos/{filename}'
+        pet.pet_pic_path = path2
+
+        db.session.commit()
+    return redirect(url_for('main.new_pet',uname=uname))
 
 
     

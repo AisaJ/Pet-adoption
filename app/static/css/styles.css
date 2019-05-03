@@ -92,6 +92,11 @@ img{
     background-color: transparent;
   }
 }
+.pet-photo{
+  border-bottom: 2px dotted  #f4a460;
+  margin-bottom: 3%;
+  
+}
 /* .card-image{
   background-image: url('../static/images/paka2.jpeg');
   background-repeat: no-repeat;

@@ -14,10 +14,10 @@ class MessageForm(FlaskForm):
 
 class PetForm(FlaskForm):
     name = StringField('Pets Name')  
-    Gender = SelectField('Pets Gender', choices=[('Male', 'Male'),('Female', 'Female')])
-    Age = StringField('Pets Age (In months)')
+    gender = SelectField('Pets Gender', choices=[('Male', 'Male'),('Female', 'Female')])
+    age = StringField('Pets Age (In months)')
     description = TextAreaField('Pet Description')
-    Contact = StringField('enter phone number')
+    contact = StringField('enter phone number')
     submit = SubmitField('Submit')
     
     
