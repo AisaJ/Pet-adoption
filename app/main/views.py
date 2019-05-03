@@ -87,4 +87,8 @@ def pet_pic(uname):
     return redirect(url_for('main.new_pet',uname=uname))
 
 
-    
+@main.route('/petcare')
+def petcare():
+
+  title= "Pet Care"
+  return render_template('petcare.html',title = title)

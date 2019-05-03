@@ -19,6 +19,7 @@ photos = UploadSet('photos',IMAGES)
 mail = Mail()
 simple = SimpleMDE()
 
+bootstrap = Bootstrap()
 def create_app(config_name):
   app = Flask(__name__)
  
@@ -40,6 +41,5 @@ def create_app(config_name):
   simple.init_app(app)
   # configure UploadSet
   configure_uploads(app,photos)
-
 
   return app
