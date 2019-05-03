@@ -32,7 +32,7 @@ width: 50px;
   font-weight: bold;
   margin-top: 2%;  
 }
-.profile-section,.prof-update,.registration,.login{
+.profile-section,.prof-update,.registration,.login,.adopting{
   margin-top: 4%;
 }
 .reg-title{
@@ -94,9 +94,25 @@ img{
 }
 .pet-photo{
   border-bottom: 2px dotted  #f4a460;
-  margin-bottom: 3%;
-  
+  margin-bottom: 3%;  
 }
+.your-pet{
+  padding: 1%;
+}
+#image1{
+  width:20%;
+  height:30%;
+  float:right;
+}
+#title{
+  font-size:3.0em;
+  text-align:center;
+}
+#general{
+  background-color:rgb(96,244,238);
+  text-align: center;
+  font-size: 5.0em;
+  }  
 /* .card-image{
   background-image: url('../static/images/paka2.jpeg');
   background-repeat: no-repeat;

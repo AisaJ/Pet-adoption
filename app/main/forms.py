@@ -8,8 +8,7 @@ class UpdateProfile(FlaskForm):
 
 class MessageForm(FlaskForm):
 
-    title = StringField('title',validators=[Required()])
-    message = TextAreaField('message')
+    message = TextAreaField('Message the Seller',validators=[Required()])
     submit = SubmitField('Submit')
 
 class PetForm(FlaskForm):

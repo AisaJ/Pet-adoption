@@ -86,9 +86,30 @@ def pet_pic(uname):
         db.session.commit()
     return redirect(url_for('main.new_pet',uname=uname))
 
-
 @main.route('/petcare')
 def petcare():
 
   title= "Pet Care"
   return render_template('petcare.html',title = title)
+
+@main.route('/message/pets',methods=['GET','POST'])
+def message():
+  message = MessageForm()
+  
+  all_pets=Pet.query.all()
+
+  if message.validate_on_submit():
+    content = message.message.data
+    
+    new_message = Message(message=content)
+
+    db.session.add(new_message)
+    db.session.commit()  
+    
+  post = 'Engage the owner'
+  
+#   messages = Message.query.filter_by(pet_id=pet.id).all()  
+#   if pet is None:
+#     abort(404)
+  
+  return render_template('adopt_pet.html',all_pets=all_pets, message_form=message,post=post)

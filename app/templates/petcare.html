@@ -8,7 +8,7 @@
  {% block content %}
 
   <div class="container-fluid" >
-  <div class="jumbotron" id="general">
+  <div class="jumbotron text-center" id="general">
       <h1>General Petcare Information</h1>
   </div>
   </div>
@@ -117,26 +117,17 @@
       </ul>
     </div>
 <style>
-#general{
-background-color:rgb(96,244,238);
-text-align: center;
-font-size: 5.0em;
-}  
-#image1{
-  width:20%;
-  height:30%;
-  float:right;
-}
-#title{
-  font-size:3.0em;
-  text-align:center;
-}
+
 body{
 background-color:rgb(96,244,238);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: cover;
-}      
+}  
+h1,h2,h3{
+  font-weight: bold;
+  text-align: center;
+}    
 </style>
  {% include 'footer.html' %}
   {% endblock %} 

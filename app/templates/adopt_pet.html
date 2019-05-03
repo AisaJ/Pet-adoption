@@ -7,15 +7,24 @@
 {% endblock%}
 
 {% block content %}
-<div class="container row">
+<div class="container row adopting">
   <div class="col-md-1"></div>
   <div class="col-md-5">
-    <div class="card">
-
+      {%for pet in all_pets%}
+    <div class="card your-pet">      
+      <h4 class="card-title"><b>Pet Name: </b>{{pet.pet_name}}</h4>
+      <div class="card-body">
+          
+          <p><b>Gender: </b>{{pet.gender}}</p> 
+          <p><b>Age: </b>{{pet.age}}</p>
+          <p><b>Description: </b>{{pet.description}}</p> 
+      </div>       
+      <p class="card-footer"><b>Owner's Contact: </b>{{pet.contact}}</p>  
     </div>
+    {%endfor%}
   </div>
   <div class="col-md-5">
-    </div>
+    <div>
       {{ wtf.quick_form(message_form)}}  
     </div>
   </div>
