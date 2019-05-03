@@ -80,8 +80,8 @@ def pet_pic(uname):
     pet=Pet.query.filter_by(user_id=current_user.id)
     if 'photo' in request.files:
         filename = photos.save(request.files['photo'])
-        path2 = f'photos/{filename}'
-        pet.pet_pic_path = path2
+        path = f'photos/{filename}'
+        pet.pet_pic_path = path
 
         db.session.commit()
     return redirect(url_for('main.new_pet',uname=uname))

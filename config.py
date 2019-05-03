@@ -12,7 +12,6 @@ class Config:
   UPLOADED_PHOTOS_DEST ='app/static/photos'
 
 
-
 #  email configurations
   MAIL_SERVER = 'smtp.googlemail.com'
   MAIL_PORT = 587
