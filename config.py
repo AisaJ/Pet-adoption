@@ -2,7 +2,7 @@ import os
 class Config:
   SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:jemila@localhost/pets'
   SQLALCHEMY_TRACK_MODIFICATIONS = False
-  SECRET_KEY=os.environ.get('SECRET_KEY')
+  SECRET_KEY = os.environ.get('SECRET_KEY')
   # simple mde  configurations
   SIMPLEMDE_JS_IIFE = True
   SIMPLEMDE_USE_CDN = True
@@ -24,11 +24,11 @@ class Config:
 
 
 class ProdConfig(Config):
-  pass
-  # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+  
+   SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 class TestConfig(Config):
-  pass
-
+   SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:jemila@localhost/pets'
+   DEBUG = True
 class DevConfig(Config):
   DEBUG = True
 
