@@ -1,8 +1,8 @@
 # Adopt a Pet
 #### This is a web application that allows pet lovers to easily adopt a pet they love by connecting them to pet owners willing to put some of their pets for adoption. The application also allows those owning pets to find pet care facilities and connect with Veterinary physicians. May 3, 2019.
-#### By **Aisa Jemila**,**Amin Adan**,**Adho Galgalo** and **Rehema Faith**
+#### By **Aisa Jemila**, **Amin Adan**, **Adho Galgalo** and **Rehema Faith**
 ## Description
-Deployed on:https://we-blog3.herokuapp.com/
+Deployed on:https://adopt-pet3.herokuapp.com/
 This is a pet adoption web application. Users find pets they love by connecting with pet owners who are willing to put pets for adoption. Users get to find pet care facilities easily and certified veterinaries. This is helpful for users who escpecially who wish to adopt pets and have no clue how and where to start.
 ## Setup/Installation Requirements
 * Clone the project
@@ -11,9 +11,9 @@ This is a pet adoption web application. Users find pets they love by connecting 
 ## Behavior Driven Development (BDD)
 | General Behavior | Input    | Output   |
 | :------------- | :------------- | :------------- |
-| Users can view pets available foradoption | User clicks Pets menu choice     | Redirected to the available pets section |
+| Users can view pets available for adoption | User clicks Pets menu choice     | Redirected to the available pets section on home page |
 | User can register to post a pet/adopt a pet | Clicks the Sign in menu choice  | Redirected to Sign up page |
-| User can edit their account profile, upload profile image | clicks the profile menu linked while signed in  | Redirected to the update profile page |
+| User can edit their account's profile, upload profile image | clicks the profile menu linked while signed in  | Redirected to the update profile page |
 | User can add new pet  | Clicks on the Add pet menu link  | Redirected to the page with form of adding new pet |
 | User can book a pet and message pet owner | Clicks on get pet button on the ept post  | Redirected to page of adding message |
 
