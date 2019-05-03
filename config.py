@@ -1,6 +1,6 @@
 import os
 class Config:
-  SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:jemila@localhost/pets'
+  SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://amin:aminn@localhost/pet'
   SQLALCHEMY_TRACK_MODIFICATIONS = False
   SECRET_KEY = os.environ.get('SECRET_KEY')
   # simple mde  configurations
@@ -20,14 +20,14 @@ class Config:
   MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
   MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
   SUBJECT_PREFIX = 'Pet-adoption'
-  SENDER_EMAIL = 'aisajam.jammy@gmail.com'
+  SENDER_EMAIL = 'amiinegal34@gmail.com'
 
 
 class ProdConfig(Config):
   
    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 class TestConfig(Config):
-   SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:jemila@localhost/pets'
+   SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://amin:aminn@localhost/pet'
    DEBUG = True
 class DevConfig(Config):
   DEBUG = True

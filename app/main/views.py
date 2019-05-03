@@ -9,7 +9,7 @@ import markdown2
 @main.route('/')
 def index():
 
-  title='This works'
+  title='Adopt a Pet'
   return render_template('index.html',title=title)
 
 @main.route('/user/<uname>')
