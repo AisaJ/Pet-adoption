@@ -33,7 +33,7 @@ width: 50px;
   font-weight: bold;
   margin-top: 2%;  
 }
-.profile-section,.prof-update,.registration,.login,.adopting{
+.profile-section,.prof-update,.registration,.login,.adopting,.prof-details{
   margin-top: 4%;
 }
 .reg-title{
@@ -50,8 +50,11 @@ width: 50px;
   margin-left: 3%;
   margin-right:3%;
 }
+.about-us{
+  background-color: #f4a460;
+}
 .about-desc{
-  border-bottom: 1px dotted #f4a460;
+  border-bottom: 1px dotted rgb(96,244,238);
 }
 #pets{
   font-size: 1.3em;
