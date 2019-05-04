@@ -22,11 +22,12 @@ width: 50px;
 }
 .pets-title{      
   margin-bottom: 1%;
-  background-color:rgb(244,164,96);
+  background-color:#f4a460;
 }
 #pets-title{
   border-radius: 25px;
   padding: 2%;  
+
 }
 .newpet-title{
   font-weight: bold;
@@ -77,9 +78,10 @@ img{
 }
 .carousel-caption{
   margin-top: 0%;
-  background-color: rgba(96,244,238,0.5);
+  background-color: rgba(244,164,96,0.5);
   border-radius: 30px;
   padding: 1%;
+  color: black;
 }
 .navbar-collapse{
   color: black; 
@@ -106,10 +108,16 @@ img{
   text-align:center;
 }
 #general{
-  background-color:rgb(96,244,238);
+  background-color:#f4a460;
   text-align: center;
   font-size: 5.0em;
-  }  
+}
+.btn{
+  background-color: rgb(96,244,238);
+  color: black;
+}  
+
+
 /* .card-image{
   background-image: url('../static/images/paka2.jpeg');
   background-repeat: no-repeat;
