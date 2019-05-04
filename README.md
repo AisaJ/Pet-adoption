@@ -3,7 +3,7 @@
 #### By **Aisa Jemila**, **Amin Adan**, **Adho Galgalo** and **Rehema Faith**
 ## Description
 Deployed on:https://adopt-pet3.herokuapp.com/
-This is a pet adoption web application. Users find pets they love by connecting with pet owners who are willing to put pets for adoption. Users get to find pet care facilities easily and certified veterinaries. This is helpful for users who escpecially who wish to adopt pets and have no clue how and where to start.
+This is a pet adoption web application. Users find pets they love by connecting with pet owners who are willing to put pets for adoption. Users get to find pet care facilities easily and certified veterinaries. This is helpful for users who escpecially wish to adopt pets and have no clue how and where to start.
 ## Setup/Installation Requirements
 * Clone the project
 * On the command line run chmod +x ./start.sh
